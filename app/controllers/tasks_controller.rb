@@ -11,6 +11,7 @@ class TasksController < ApplicationController
 
   def new
     @task = Task.new
+    @kinds = Kind.order(:name)
   end
 
   def edit
@@ -69,6 +70,6 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:title, :description, :done)
+    params.require(:task).permit(:title, :description, :done, :kind_id)
   end
 end

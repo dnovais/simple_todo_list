@@ -12,3 +12,8 @@ Task.create(title: "Task 4", description: "Task description 4")
 Task.create(title: "Task 5", description: "Task description 5")
 Task.create(title: "Task 6", description: "Task description 6")
 Task.create(title: "Task 7", description: "Task description 7")
+
+Kind.create(name: "Minhas tarefas")
+Kind.create(name: "Trabalho")
+Kind.create(name: "Casa")
+Kind.create(name: "Finanças")
